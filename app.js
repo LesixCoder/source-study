@@ -12,7 +12,8 @@ app.context.render = co.wrap(
   render({
     root: config.viewDir,
     autoescape: true,
-    cache: 'memory',
+    // cache: "memory",
+    cache: false,
     ext: 'html',
     varControls: ['[[', ']]'],
     writeBody: false
@@ -23,7 +24,7 @@ log4js.configure({
   appenders: {
     cheese: {
       type: 'file',
-      filename: 'logs/yd.log'
+      filename: 'logs/index.log'
     }
   },
   categories: {
