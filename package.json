@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  }
+}
